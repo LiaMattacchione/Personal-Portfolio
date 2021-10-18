@@ -4,7 +4,7 @@ import '../../../src/App.css';
 
 function About() {
   return (
-    <article class="uk-article">
+    <article class="uk-article aboutMeSection">
       <h1 id="about" class="uk-article-title">About Me</h1>
       
       <div class="uk-flex-wrap">
@@ -16,8 +16,8 @@ function About() {
                 </div>
             </div>
             <div>
-                <div class="uk-card-body">
-                  <p class="uk-text-lead">
+                <div class="uk-card-body uk-text-lead aboutText">
+                  <p>
                     Lia has always been physically active, participating in a variety of individual 
                     and group activities and sports including kayaking, TaeKwonDo, Soccer, Volleyball, 
                     Basketball and swimming. Her love for movement and health grew as she persued an 
@@ -32,8 +32,8 @@ function About() {
                 </div>
             </div>
             <div>
-                <div class="uk-card-body">
-                  <p class="uk-text-lead">
+                <div class="uk-card-body uk-text-lead aboutText">
+                  <p>
                     Collectively, her academic and work experiences alongside her
                     <a href="https://www.cmaj.ca/content/cmaj/193/15/E530.full.pdf" target="_blank"> lived experiences </a>
                     expanded her understanding of the overarching Canadian healthcare system and 

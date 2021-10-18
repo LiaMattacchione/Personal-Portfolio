@@ -7,6 +7,11 @@ import logoImage from '../../assets/small/Lia-Header-text.png';
 import { MenuItems } from './MenuItems';
 
 class Nav extends Component {
+    state = { clicked: false }
+
+    handleClick = () => {
+        this.setState({ clicked: !this.state.clicked })
+    }
 
     render (){
         return (
@@ -16,9 +21,11 @@ class Nav extends Component {
                         <img src={logoImage} className="my-2" style={{ width: "50%" }} alt="Home" />
                     </a>
                 </div>
+                <div className="menu-icon" onClick={this.handleClick}>
+                    <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
+                </div>
                 <nav>
-                    
-                    <ul>
+                    <ul className={this.state.clicked ? 'nav-menu active' : 'nav-menu'}>
                         {MenuItems.map((item, index) => {
                             return (
                                 <li key={index}>
