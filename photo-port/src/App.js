@@ -1,16 +1,17 @@
 import React, { useState } from 'react';
-import Nav from './components/Nav';
+import NavBar from './components/Nav';
 import About from './components/About';
 // import Portfolio from './components/Portfolio';
 // import Contact from './components/Contact';
 // import Resume from './components/Resume';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
 function App() {
 
   return (
     <div>
-        <Nav></Nav>
+        <NavBar/>
         <main>
             <About></About>
       </main>

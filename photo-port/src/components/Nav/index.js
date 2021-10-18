@@ -1,44 +1,64 @@
 import React, { Component } from 'react';
-// import About from '../About';
-// import Portfolio from '../Portfolio';
-// import Contact from '../Contact';
-import '../../App.css';
+import About from '../About';
+import Portfolio from '../Portfolio';
+import Contact from '../Contact';
+import Resume from '../Resume';
 import logoImage from '../../assets/small/Lia-Header-text.png';
 import { MenuItems } from './MenuItems';
+import { Navbar,Nav } from 'react-bootstrap';
+import '../../App.css';
 
-class Nav extends Component {
-    state = { clicked: false }
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
+} from "react-router-dom";
 
-    handleClick = () => {
-        this.setState({ clicked: !this.state.clicked })
-    }
 
-    render (){
+class NavBar extends Component {
+
+    render() {
         return (
-            <header>
+            <Router>
+                <div class="navBarImage">
+                    <Navbar expand="lg">
+                        <Navbar.Brand as={ Link } to={"/about"}>
+                            <img src={logoImage} className="d-inline-block align-top" style={{ width: "50%" }} alt="Home" />
+                        </Navbar.Brand>
+                        <Navbar.Toggle aria-controls="navbarScroll" />
+                        <Navbar.Collapse id="navbarScroll" className="justify-content-end">
+                            <Nav
+                                className="mr-auto my-2 my-lg-0"
+                                style={{ maxHeight: '200px' }}
+                                navbarScroll
+                            >
+                                <Nav.Link as={ Link } to={"/about"}>About Me</Nav.Link>
+                                <Nav.Link as={ Link } to={"/portfolio"}>Portfolio</Nav.Link>
+                                <Nav.Link as={ Link } to={"/resume"}>Resume</Nav.Link>
+                                <Nav.Link as={ Link } to={"/contact"}>Contact Me</Nav.Link>
+                            </Nav>
+                        </Navbar.Collapse>
+                    </Navbar>
+                </div>
                 <div>
-                    <a data-testid="link" href="/">
-                        <img src={logoImage} className="my-2" style={{ width: "50%" }} alt="Home" />
-                    </a>
+                    <Switch>
+                        <Route path="/about">
+                            <About />
+                        </Route>
+                        <Route path="/portfolio">
+                            <Portfolio />
+                        </Route>
+                        <Route path="/resume">
+                            <Resume />
+                        </Route>
+                        <Route path="/contact">
+                            <Contact />
+                        </Route>
+                    </Switch>
                 </div>
-                <div className="menu-icon" onClick={this.handleClick}>
-                    <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
-                </div>
-                <nav>
-                    <ul className={this.state.clicked ? 'nav-menu active' : 'nav-menu'}>
-                        {MenuItems.map((item, index) => {
-                            return (
-                                <li key={index}>
-                                    <a className={item.cName} href={item.url}>
-                                        {item.title}
-                                    </a>
-                                </li> 
-                            )
-                        })}
-                    </ul>
-                </nav>
-            </header>
+            </Router>
         );
     }
 }
-export default Nav;
+export default NavBar;
