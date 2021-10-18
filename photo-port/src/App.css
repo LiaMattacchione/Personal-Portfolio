@@ -2,6 +2,8 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+
 } 
 
 :root {
@@ -13,5 +15,39 @@
 body {
   padding: 30px;
   background-color: var(--secondary-color);
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+/*--------- Header & Nav -------------*/
+header {
+  display: flex;
+  flex-wrap: wrap;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  background-image: url('./assets/cover/treeline2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 35px 10px 35px;
+  z-index: 9999;
+}
+
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+header nav ul li a {
+  padding: 10px 15px;
+  font-size: 1.58vw;
+  color: var(--tertiary-color);
+  text-decoration: none;
+}
+
+header nav ul li a:hover {
+  background: rgba(241,217,191,0.6);
+  color: var(--tertiary-color);
+  border-radius: 10px;
 }
