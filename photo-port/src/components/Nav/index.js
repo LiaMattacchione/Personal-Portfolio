@@ -22,7 +22,7 @@ class NavBar extends Component {
             <Router>
                 <div class="navBarImage">
                     <Navbar expand="lg" sticky="top">
-                        <Navbar.Brand as={ Link } to={"/about"}>
+                        <Navbar.Brand as={ Link } to={"/"}>
                             <img src={logoImage} className="d-inline-block align-top" style={{ width: "50%" }} alt="Home" />
                         </Navbar.Brand>
                         <Navbar.Toggle aria-controls="navbarScroll" />

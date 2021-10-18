@@ -49,3 +49,13 @@
 .aboutText {
   font-size: 1.5rem;
 }
+
+
+/*------------ Portfolio -------------*/
+.portfolioContainer {
+  padding: 20px;
+}
+
+.rowOne {
+  padding-bottom: 20px;
+}
