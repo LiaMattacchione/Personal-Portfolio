@@ -4,7 +4,6 @@ import Portfolio from '../Portfolio';
 import Contact from '../Contact';
 import Resume from '../Resume';
 import logoImage from '../../assets/small/Lia-Header-text.png';
-import { MenuItems } from './MenuItems';
 import { Navbar,Nav } from 'react-bootstrap';
 import '../../App.css';
 
@@ -12,7 +11,8 @@ import {
     BrowserRouter as Router,
     Switch,
     Route,
-    Link
+    Link,
+    NavLink
 } from "react-router-dom";
 
 
@@ -22,21 +22,28 @@ class NavBar extends Component {
         return (
             <Router>
                 <div class="navBarImage">
-                    <Navbar expand="lg">
+                    <Navbar expand="lg" sticky="top">
                         <Navbar.Brand as={ Link } to={"/about"}>
                             <img src={logoImage} className="d-inline-block align-top" style={{ width: "50%" }} alt="Home" />
                         </Navbar.Brand>
                         <Navbar.Toggle aria-controls="navbarScroll" />
                         <Navbar.Collapse id="navbarScroll" className="justify-content-end">
-                            <Nav
-                                className="mr-auto my-2 my-lg-0"
-                                style={{ maxHeight: '200px' }}
-                                navbarScroll
-                            >
-                                <Nav.Link as={ Link } to={"/about"}>About Me</Nav.Link>
-                                <Nav.Link as={ Link } to={"/portfolio"}>Portfolio</Nav.Link>
-                                <Nav.Link as={ Link } to={"/resume"}>Resume</Nav.Link>
-                                <Nav.Link as={ Link } to={"/contact"}>Contact Me</Nav.Link>
+                            <Nav className="mr-auto my-2 my-lg-0" style={{ maxHeight: '200px' }} navbarScroll variant="tabs" defaultActiveKey="/about">
+                                <Nav.Item>
+                                    <Nav.Link as={ Link } to={"/about"}>About Me</Nav.Link>
+                                </Nav.Item>
+
+                                <Nav.Item>
+                                    <Nav.Link as={ Link } to={"/portfolio"}>Portfolio</Nav.Link>
+                                </Nav.Item>
+
+                                <Nav.Item>
+                                    <Nav.Link as={ Link } to={"/resume"}>Resume</Nav.Link>
+                                </Nav.Item>
+
+                                <Nav.Item>
+                                    <Nav.Link as={ Link } to={"/contact"}>Contact Me</Nav.Link>
+                                </Nav.Item>
                             </Nav>
                         </Navbar.Collapse>
                     </Navbar>
