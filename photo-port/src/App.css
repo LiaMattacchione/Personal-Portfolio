@@ -2,19 +2,13 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 } 
 
 :root {
   --primary-color: #F1D9BF;
   --secondary-color: #FCF8F3;
   --tertiary-color: #2E211B;
-}
-
-main{
-  height: 400px;
-  margin: 0;
-  background-color: var(--secondary-color);
 }
 
 
@@ -34,17 +28,22 @@ main{
 /*---------- Footer -------------*/
 .footerNavbar {
   padding: 20px;
+  margin-top: 500px;
   background-image: url('./assets/cover/treeline2.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   opacity: 0.7;
 }
 
+/*----------- Contact Me ------------*/
+.formStyling {
+  padding: 20px;
+}
 
 /*---------- About Me ----------*/
 .aboutMeSection {
   padding: 10px;
-  background-color: var(--secondary-color);
+  margin-top: 10px;
 }
 
 .aboutText {

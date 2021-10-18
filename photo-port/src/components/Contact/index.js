@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import { Form,Button } from 'react-bootstrap';
 import { validateEmail } from '../../utils/helpers';
 
 function ContactForm() {
@@ -37,29 +37,31 @@ function ContactForm() {
   };
 
   return (
-    <section>
-      <h1 data-testid="h1tag">Contact me</h1>
-      <form id="contact-form" onSubmit={handleSubmit}>
-        <div>
-          <label htmlFor="name">Name:</label>
-          <input type="text" name="name" defaultValue={name} onBlur={handleChange} />
-        </div>
-        <div>
-          <label htmlFor="email">Email address:</label>
-          <input type="email" name="email" defaultValue={email} onBlur={handleChange} />
-        </div>
-        <div>
-          <label htmlFor="message">Message:</label>
-          <textarea name="message" rows="5" defaultValue={message} onBlur={handleChange} />
-        </div>
+    <div class="formStyling">
+      <Form id="contact-form" onSubmit={handleSubmit}>
+        <h1 data-testid="h1tag">Contact me</h1>
+        <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+          <Form.Label>Name</Form.Label>
+          <Form.Control type="text" name="name" defaultValue={name} onBlur={handleChange} placeholder="Full Name" />
+        </Form.Group>
+        <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+          <Form.Label>Email address</Form.Label>
+          <Form.Control type="email" name="email" defaultValue={email} onBlur={handleChange} placeholder="name@example.com" />
+        </Form.Group>
+        <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
+          <Form.Label>Message</Form.Label>
+          <Form.Control as="textarea" rows={3} name="message" defaultValue={message} onBlur={handleChange} />
+        </Form.Group>
         {errorMessage && (
           <div>
             <p className="error-text">{errorMessage}</p>
           </div>
         )}
-        <button data-testid="button" type="submit">Submit</button>
-      </form>
-    </section>
+        <Button variant="secondary" type="submit">
+          Submit
+        </Button>
+      </Form>
+    </div>
   );
 }
 
