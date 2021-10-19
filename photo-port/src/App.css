@@ -67,13 +67,23 @@
   padding: 20px;
 }
 
+.customCard {
+  background-color: var(--secondary-color) !important;
+}
+
 .rowOne {
   padding-top: 30px;
   padding-bottom: 20px;
 }
 
 .portfolioImage {
-  opacity: 0.2;
+  opacity: 0.7;
+  width: 40%;
+  margin-left: 30%;
+}
+
+.portfolioDescription {
+  font-size: 1rem;
 }
 
 .portfolioButtons {
@@ -96,7 +106,7 @@
 
 @media screen and (max-width: 1024px) {
   .portfolioDescription {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 }
 
