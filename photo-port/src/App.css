@@ -71,6 +71,10 @@
   padding-bottom: 20px;
 }
 
+.portfolioImage {
+  opacity: 0.3;
+}
+
 /*------------ Resume -------------*/
 .downloadResume {
   padding: 15px;
