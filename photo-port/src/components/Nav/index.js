@@ -3,7 +3,6 @@ import About from '../About';
 import Portfolio from '../Portfolio';
 import Contact from '../Contact';
 import Resume from '../Resume';
-import Header from '../Header';
 import logoImage from '../../assets/small/Lia-Header-text.png';
 import { Navbar,Nav } from 'react-bootstrap';
 import Typewriter from 'typewriter-effect';
@@ -17,9 +16,9 @@ import {
 } from "react-router-dom";
 
 
-class NavBar extends Component {
+function NavBar(profile) {
+    const {portfolioItems} = profile;
 
-    render() {
         return (
             <Router>
                 <div class="navBarImage">
@@ -62,14 +61,11 @@ class NavBar extends Component {
                 </div>
                 <div>
                     <Switch>
-                        {/* <Route path="/">
-                            <Header />
-                        </Route> */}
                         <Route path="/about">
                             <About />
                         </Route>
                         <Route path="/portfolio">
-                            <Portfolio />
+                            <Portfolio portfolioItems={portfolioItems}/>
                         </Route>
                         <Route path="/resume">
                             <Resume />
@@ -81,6 +77,5 @@ class NavBar extends Component {
                 </div>
             </Router>
         );
-    }
 }
 export default NavBar;

@@ -1,9 +1,9 @@
-import proOne from '../../assets/large/ChefsWayLogo.png';
-import proTwo from '../../assets/large/BudgetTracker.png';
+import proOne from '../../assets/large/ChefsWay_Icon.png';
+import proTwo from '../../assets/large/budget.png';
 import proThree from '../../assets/large/COVID.png';
-import proFour from '../../assets/large/GEDC.png';
-import proFive from '../../assets/large/HealthyDebate.png';
-import proSix from '../../assets/large/keen.jpg';
+import proFour from '../../assets/large/GEDC-icon.png';
+import proFive from '../../assets/large/Healthy-icon.png';
+import proSix from '../../assets/large/OKA-icon.png';
 
 let PortfolioItems = {
     "portfolio": [
