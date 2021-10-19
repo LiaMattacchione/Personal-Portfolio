@@ -1,5 +1,5 @@
 import React from "react";
-import { Card,Row,Col,Button,ListGroup,ListGroupItem } from 'react-bootstrap';
+import { Card,Row,Col,Button } from 'react-bootstrap';
 
 function Portfolio(profile) {
     return (

@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import About from '../About';
 import Portfolio from '../Portfolio';
 import Contact from '../Contact';
@@ -6,7 +6,6 @@ import Resume from '../Resume';
 import logoImage from '../../assets/small/Lia-Header-text.png';
 import { Navbar,Nav } from 'react-bootstrap';
 import Typewriter from 'typewriter-effect';
-import PortfolioItems from '../Portfolio/PortfolioItems';
 import '../../App.css';
 
 import {

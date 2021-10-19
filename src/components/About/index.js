@@ -30,7 +30,7 @@ class About extends Component {
             <Col>
               <p>
                 Collectively, her academic and work experiences alongside her
-                <a href="https://www.cmaj.ca/content/cmaj/193/15/E530.full.pdf" target="_blank"> lived experiences </a>
+                <a href="https://www.cmaj.ca/content/cmaj/193/15/E530.full.pdf" target="_blank" rel="noreferrer"> lived experiences </a>
                 expanded her understanding of the overarching Canadian healthcare system and 
                 the multitude of factors that directly affect individual and community based 
                 health experiences. Lia brings her deep passion for health and healthcare 
