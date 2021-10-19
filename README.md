@@ -37,7 +37,7 @@ Mock-Up
 ## Submission Requirements for Review:
 * URL of the GitHub repository: https://github.com/LiaMattacchione/Personal-Portfolio.git
   * Repository unique name: Personal-Porfolio
-* URL of deployed application: 
+* URL of deployed application: https://webdevprof-lia.netlify.app/about
 
 ## Application Screenshots:
 ![App Screenshot](./src/assets/cover/Screenshot.png)
