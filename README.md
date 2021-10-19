@@ -40,4 +40,4 @@ Mock-Up
 * URL of deployed application: 
 
 ## Application Screenshots:
-![App Screenshot](./photo-port/src/assets/cover/Screenshot.png)
+![App Screenshot](./src/assets/cover/Screenshot.png)
