@@ -1,8 +1,6 @@
 import React from "react";
 import { Card,Row,Col,Button } from 'react-bootstrap';
 
-
-
 function Portfolio(profile) {
     return (
         <div class="portfolioContainer">
@@ -12,24 +10,24 @@ function Portfolio(profile) {
                     {profile.PortfolioItems.map((PortfolioItem) => (<Col key={PortfolioItem.id}>
                             <Card className="bg-dark text-white">
                                 <div className="text-center">
-                                    <Card.Img class="portfolioImage" variant="top" src={PortfolioItem.imgurl} style={{ width: "80%" }} alt="" />
+                                    <Card.Img class="portfolioImage" variant="top" src={PortfolioItem.imgurl} style={{ width: "70%" }} alt="" />
                                 </div>
-                                <Card.ImgOverlay>
-                                    <Card.Body>
+                                <Card.Body>
+                                    <Card.ImgOverlay>
                                         <blockquote className="blockquote mb-0">
-                                            <p>
+                                            <p class="portfolioTitle">
                                                 {' '}{PortfolioItem.title}{' '}
                                             </p>
-                                            <footer className="blockquote-footer">
+                                            <footer className="blockquote-footer" class="portfolioDescription">
                                                 {PortfolioItem.description}
                                             </footer>
                                         </blockquote>
-                                    </Card.Body>
-                                </Card.ImgOverlay>
-                                <Card.Footer >
-                                    <Card.Link href={`${PortfolioItem.githubLink}`} target="_blank" className="fab fa-github fa-2x" style={{color: 'white', textDecoration: 'none'}}></Card.Link>
-                                    <Card.Link href={PortfolioItem.appLink} target="_blank" className="fas fa-external-link-square-alt fa-2x" style={{color: 'white', textDecoration: 'none'}}></Card.Link>
-                                </Card.Footer>
+                                    </Card.ImgOverlay>
+                                    <Card.Footer>
+                                        <Button variant="light" href={PortfolioItem.githubLink} target="_blank" rel="noreferrer" className="fab fa-github fa-2x" style={{color: 'black', textDecoration: 'none', marginTop: '20px'}}></Button>
+                                        <Button variant="light" href={PortfolioItem.appLink} target="_blank" rel="noreferrer" className="fas fa-external-link-square-alt fa-2x" style={{color: 'black', textDecoration: 'none', marginLeft: '10px', marginTop: '20px'}}></Button>
+                                    </Card.Footer>
+                                </Card.Body>
                             </Card>
                         </Col>
                     ))}

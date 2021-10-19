@@ -68,11 +68,16 @@
 }
 
 .rowOne {
+  padding-top: 30px;
   padding-bottom: 20px;
 }
 
 .portfolioImage {
   opacity: 0.2;
+}
+
+.portfolioButtons {
+  padding-left: 10px;
 }
 
 /*------------ Resume -------------*/
@@ -89,3 +94,48 @@
   padding-bottom: 15px;
 }
 
+@media screen and (max-width: 1024px) {
+  .portfolioDescription {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .portfolioTitle {
+    font-size: 1rem;
+  }
+
+  .portfolioDescription {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .portfolioTitle {
+    font-size: 0.9rem;
+  }
+
+  .portfolioDescription {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .portfolioTitle {
+    font-size: 1.4rem;
+  }
+
+  .portfolioDescription {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .portfolioTitle {
+    font-size: 1.2rem;
+  }
+
+  .portfolioDescription {
+    font-size: 0.9rem;
+  }
+}
