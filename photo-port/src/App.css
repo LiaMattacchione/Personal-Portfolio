@@ -59,3 +59,12 @@
 .rowOne {
   padding-bottom: 20px;
 }
+
+/*------------ Resume -------------*/
+.resumeContainer{
+  padding: 40px;
+}
+
+.employmentContainer {
+  padding-bottom: 15px;
+}
