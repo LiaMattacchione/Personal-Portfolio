@@ -24,6 +24,15 @@
   z-index: 9999;
 }
 
+.typewriterContainer {
+  padding: 10px;
+  margin-top: 3%;
+  margin-left: 10%;
+  margin-right: 10%;
+  background-image: url('./assets/cover/treeline2.jpg');
+  opacity: 0.7;
+}
+
 
 /*---------- Footer -------------*/
 .footerNavbar {
@@ -61,10 +70,16 @@
 }
 
 /*------------ Resume -------------*/
+.downloadResume {
+  padding: 15px;
+  float: right;
+}
+
 .resumeContainer{
-  padding: 40px;
+  padding: 70px 40px 40px 40px;
 }
 
 .employmentContainer {
   padding-bottom: 15px;
 }
+

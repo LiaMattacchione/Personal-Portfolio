@@ -3,8 +3,10 @@ import About from '../About';
 import Portfolio from '../Portfolio';
 import Contact from '../Contact';
 import Resume from '../Resume';
+import Header from '../Header';
 import logoImage from '../../assets/small/Lia-Header-text.png';
 import { Navbar,Nav } from 'react-bootstrap';
+import Typewriter from 'typewriter-effect';
 import '../../App.css';
 
 import {
@@ -47,8 +49,22 @@ class NavBar extends Component {
                         </Navbar.Collapse>
                     </Navbar>
                 </div>
+                <div class="typewriterContainer">
+                    <h2>
+                        <Typewriter 
+                            options={{
+                                strings: ['Merging my passion for healthcare with coding.'],
+                                autoStart: true,
+                                loop: true,
+                            }}                
+                        />
+                    </h2>
+                </div>
                 <div>
                     <Switch>
+                        {/* <Route path="/">
+                            <Header />
+                        </Route> */}
                         <Route path="/about">
                             <About />
                         </Route>
