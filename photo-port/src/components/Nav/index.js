@@ -6,6 +6,7 @@ import Resume from '../Resume';
 import logoImage from '../../assets/small/Lia-Header-text.png';
 import { Navbar,Nav } from 'react-bootstrap';
 import Typewriter from 'typewriter-effect';
+import PortfolioItems from '../Portfolio/PortfolioItems';
 import '../../App.css';
 
 import {
@@ -17,7 +18,7 @@ import {
 
 
 function NavBar(profile) {
-    const {portfolioItems} = profile;
+    const {PortfolioItems} = profile;
 
         return (
             <Router>
@@ -65,7 +66,7 @@ function NavBar(profile) {
                             <About />
                         </Route>
                         <Route path="/portfolio">
-                            <Portfolio portfolioItems={portfolioItems}/>
+                            <Portfolio PortfolioItems={PortfolioItems}/>
                         </Route>
                         <Route path="/resume">
                             <Resume />
