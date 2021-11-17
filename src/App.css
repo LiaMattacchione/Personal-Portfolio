@@ -2,13 +2,15 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family:'Open Sans';
 } 
 
 :root {
-  --primary-color: #F1D9BF;
-  --secondary-color: #FCF8F3;
-  --tertiary-color: #2E211B;
+  --darkb: #353535;
+  --white: #ffffff;
+  --lightblu: #d2d7df;
+  --lightbe: #bdbbb0;
+  --darkbe: #8a897c;
 }
 
 

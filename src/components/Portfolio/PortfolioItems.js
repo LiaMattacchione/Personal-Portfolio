@@ -4,6 +4,7 @@ import proThree from '../../assets/large/COVID.png';
 import proFour from '../../assets/large/GEDC-icon.png';
 import proFive from '../../assets/large/Healthy-icon.png';
 import proSix from '../../assets/large/OKA-icon.png';
+import proSeven from '../../assets/large/nextstep.png';
 
 let PortfolioItems = [
       {
@@ -53,6 +54,14 @@ let PortfolioItems = [
         description: 'A practice-based research network, to serve as a hub to support collaboration between front-line Kinesiologists and academic researchers.', 
         githubLink: '', 
         appLink: 'https://oka.on.ca/'
+      },
+      {
+        id: 7, 
+        imgurl: proSeven, 
+        title: 'Next Step', 
+        description: 'An application where youth can utilize additional learning material for school.', 
+        githubLink: 'https://github.com/BootcampProject/next-step', 
+        appLink: ''
       }
 ]
 
