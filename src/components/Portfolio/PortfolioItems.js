@@ -61,7 +61,7 @@ let PortfolioItems = [
         title: 'Next Step', 
         description: 'An application where youth can utilize additional learning material for school.', 
         githubLink: 'https://github.com/BootcampProject/next-step', 
-        appLink: ''
+        appLink: 'https://next-setp-uoft-project3.herokuapp.com/'
       }
 ]
 
